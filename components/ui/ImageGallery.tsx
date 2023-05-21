@@ -33,7 +33,7 @@ export default function ImageGallery({
   alt,
 }: Props) {
   return (
-    <section class="px-4 max-w-[1360px] py-4 lg:m-auto">
+    <section class="container px-4 py-4 lg:m-auto">
       <h1 class="text-secundary font-medium text-2xl">
         {title}
       </h1>
