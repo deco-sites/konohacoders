@@ -63,6 +63,7 @@
               "./islands/HeaderModals.tsx",
               "./islands/HeaderSearchbar.tsx",
               "./islands/Newsletter.tsx",
+              "./islands/NewSliderJS.tsx",
               "./islands/OutOfStock.tsx",
               "./islands/ProductImageZoom.tsx",
               "./islands/SearchControls.tsx",
@@ -92,6 +93,7 @@
               "deco-sites/konohacoders/sections/Highlights.tsx",
               "deco-sites/konohacoders/sections/InteractiveBanners.tsx",
               "deco-sites/konohacoders/sections/LinkTree.tsx",
+              "deco-sites/konohacoders/sections/NewProductShelf.tsx",
               "deco-sites/konohacoders/sections/ProductDetails.tsx",
               "deco-sites/konohacoders/sections/ProductShelf.tsx",
               "deco-sites/konohacoders/sections/SearchResult.tsx",
@@ -7684,7 +7686,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@562bea63c0e38bbc9f23c92091bf0c6e&Colors": {
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f7180f9d2c1c35308d9d8827fb410922": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7700,7 +7702,7 @@
           "required": []
         }
       ],
-      "title": "562bea63c0e38bbc9f23c92091bf0c6e&Colors"
+      "title": "Colors&f7180f9d2c1c35308d9d8827fb410922"
     },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -7803,7 +7805,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@562bea63c0e38bbc9f23c92091bf0c6e&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f7180f9d2c1c35308d9d8827fb410922",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8629,6 +8631,74 @@
       },
       "required": [],
       "title": "deco-sites/konohacoders/components/ui/LinkTree.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9uZXctc2xpZGVyL1NsaWRlci50c3g=@ItemsPerPage": {
+      "type": "object",
+      "properties": {
+        "sm": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Small screens",
+          "description": "Will apply for screens bigger than 640px"
+        },
+        "md": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Medium screens",
+          "description": "Will apply for screens bigger than 768px"
+        },
+        "lg": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Large screens",
+          "description": "Will apply for screens bigger than 1024px"
+        },
+        "default": {
+          "type": "number",
+          "description": "Will apply for screens smaller than 640px",
+          "title": "Default"
+        }
+      },
+      "required": [
+        "default"
+      ],
+      "title": "ItemsPerPage"
+    },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy9wcm9kdWN0L05ld1Byb2R1Y3RTaGVsZi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "products": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product[]|null",
+          "title": "Products"
+        },
+        "itemsPerPage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9uZXctc2xpZGVyL1NsaWRlci50c3g=@ItemsPerPage",
+          "title": "Items Per Page"
+        },
+        "infinite": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Infinite"
+        }
+      },
+      "required": [
+        "title",
+        "products",
+        "itemsPerPage"
+      ],
+      "title": "deco-sites/konohacoders/components/product/NewProductShelf.tsx@Props"
     },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy9wcm9kdWN0L1Byb2R1Y3REZXRhaWxzLnRzeA==@Props": {
       "type": "object",
@@ -10815,6 +10885,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL05ld1NsaWRlckpTLnRzeA==": {
+      "title": "./islands/NewSliderJS.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/NewSliderJS.tsx"
+          ],
+          "default": "./islands/NewSliderJS.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL091dE9mU3RvY2sudHN4": {
       "title": "./islands/OutOfStock.tsx",
       "type": "object",
@@ -11395,6 +11481,27 @@
             "deco-sites/konohacoders/sections/LinkTree.tsx"
           ],
           "default": "deco-sites/konohacoders/sections/LinkTree.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvTmV3UHJvZHVjdFNoZWxmLnRzeA==": {
+      "title": "deco-sites/konohacoders/sections/NewProductShelf.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy9wcm9kdWN0L05ld1Byb2R1Y3RTaGVsZi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/konohacoders/sections/NewProductShelf.tsx"
+          ],
+          "default": "deco-sites/konohacoders/sections/NewProductShelf.tsx"
         }
       }
     },
@@ -12574,6 +12681,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL05ld3NsZXR0ZXIudHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL05ld1NsaWRlckpTLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL091dE9mU3RvY2sudHN4"
         },
         {
@@ -12683,6 +12793,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvTGlua1RyZWUudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvTmV3UHJvZHVjdFNoZWxmLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvUHJvZHVjdERldGFpbHMudHN4"
