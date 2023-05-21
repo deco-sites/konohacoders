@@ -91,7 +91,7 @@ function Footer({ sections = [] }: Props) {
             <ul class="flex flex-col sm:hidden sm:flex-row gap-4">
               {sections.map((section) => (
                 <li>
-                  <span class="text-primary-content">
+                  <span class="text-white">
                     <details>
                       <summary>
                         {section.label}
