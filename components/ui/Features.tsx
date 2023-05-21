@@ -29,7 +29,7 @@ function FeatureHighlights(
           {features.map(({ icon: id = "Truck", title, description }) => (
             <div class="flex flex-row gap-4 py-6 sm:flex-col sm:py-0 sm:px-8 border-hidden flex-1">
               <Icon
-                class="rounded bg-primary p-2"
+                class="rounded bg-slate-200 p-2"
                 id={id}
                 width={40}
                 height={40}
