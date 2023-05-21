@@ -82,6 +82,7 @@
               "$live/sections/UseSlot.tsx",
               "deco-sites/konohacoders/sections/BannerGrid.tsx",
               "deco-sites/konohacoders/sections/BannerPLP.tsx",
+              "deco-sites/konohacoders/sections/Benefits.tsx",
               "deco-sites/konohacoders/sections/Carousel.tsx",
               "deco-sites/konohacoders/sections/CookieConsent.tsx",
               "deco-sites/konohacoders/sections/DesignSystem.tsx",
@@ -93,6 +94,7 @@
               "deco-sites/konohacoders/sections/ProductDetails.tsx",
               "deco-sites/konohacoders/sections/ProductShelf.tsx",
               "deco-sites/konohacoders/sections/SearchResult.tsx",
+              "deco-sites/konohacoders/sections/SingleBanner.tsx",
               "deco-sites/konohacoders/sections/WhatsApp.tsx",
               "deco-sites/konohacoders/sections/WishlistGallery.tsx",
               "deco-sites/std/sections/Analytics.tsx",
@@ -7201,6 +7203,185 @@
       "required": [],
       "title": "deco-sites/konohacoders/components/ui/BannerPLP.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvQmVuZWZpdHMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "ChevronLeft"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ChevronRight"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ChevronUp"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ChevronDown"
+                  },
+                  {
+                    "type": "string",
+                    "const": "QuestionMarkCircle"
+                  },
+                  {
+                    "type": "string",
+                    "const": "User"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ShoppingCart"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Bars3"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Heart"
+                  },
+                  {
+                    "type": "string",
+                    "const": "MagnifyingGlass"
+                  },
+                  {
+                    "type": "string",
+                    "const": "XMark"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Plus"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Minus"
+                  },
+                  {
+                    "type": "string",
+                    "const": "MapPin"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Phone"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Elo"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Mastercard"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Visa"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Pix"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Logo"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Facebook"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Instagram"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Tiktok"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Truck"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Discount"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Return"
+                  },
+                  {
+                    "type": "string",
+                    "const": "CreditCard"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Deco"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Discord"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Trash"
+                  },
+                  {
+                    "type": "string",
+                    "const": "FilterList"
+                  },
+                  {
+                    "type": "string",
+                    "const": "WhatsApp"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ArrowsPointingOut"
+                  }
+                ],
+                "type": "string",
+                "title": "Icon"
+              },
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "description": {
+                "type": "string",
+                "title": "Description"
+              }
+            },
+            "required": [
+              "icon",
+              "title",
+              "description"
+            ]
+          },
+          "title": "Items"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "items"
+      ],
+      "title": "deco-sites/konohacoders/sections/Benefits.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9CYW5uZXJDYXJvdXNlbC50c3g=@Banner": {
       "type": "object",
       "properties": {
@@ -7502,7 +7683,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&b966eeb0bbdb3699ee11b12ce6a39cc4": {
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@562bea63c0e38bbc9f23c92091bf0c6e&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7518,7 +7699,7 @@
           "required": []
         }
       ],
-      "title": "Colors&b966eeb0bbdb3699ee11b12ce6a39cc4"
+      "title": "562bea63c0e38bbc9f23c92091bf0c6e&Colors"
     },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -7621,7 +7802,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&b966eeb0bbdb3699ee11b12ce6a39cc4",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@562bea63c0e38bbc9f23c92091bf0c6e&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8456,6 +8637,63 @@
       ],
       "title": "deco-sites/konohacoders/components/search/SearchResult.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9TaW5nbGVCYW5uZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "left"
+            },
+            {
+              "type": "string",
+              "const": "middle"
+            },
+            {
+              "type": "string",
+              "const": "right"
+            }
+          ],
+          "type": "string",
+          "title": "Container alignment",
+          "description": "Alignment of the container and texts inside",
+          "default": "middle"
+        },
+        "tag": {
+          "type": "string",
+          "default": "Tagline",
+          "title": "Tag"
+        },
+        "title": {
+          "type": "string",
+          "default": "Short heading here",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+          "title": "Description"
+        },
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop background image",
+          "default": "https://upload.wikimedia.org/wikipedia/commons/8/89/HD_transparent_picture.png"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile background image",
+          "default": "https://upload.wikimedia.org/wikipedia/commons/8/89/HD_transparent_picture.png"
+        }
+      },
+      "required": [
+        "position",
+        "tag",
+        "title",
+        "description"
+      ],
+      "title": "deco-sites/konohacoders/components/ui/SingleBanner.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9XaGF0c0FwcC50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -8857,7 +9095,11 @@
         },
         "name": {
           "type": "string",
-          "title": "Name"
+          "title": "The audience name (will be used on cookies).",
+          "description": "Add a meaningful short word for the audience name.",
+          "maxLength": 22,
+          "minLength": 3,
+          "pattern": "^[A-Za-z0-9_]+$"
         },
         "routes": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
@@ -8973,7 +9215,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -8991,13 +9233,13 @@
           ]
         }
       ],
-      "title": "95abd76f92dd138f258080286726977e|WorkflowRef"
+      "title": "6fafe0f553db3c0685828404a37be338|WorkflowRef"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef",
           "title": "Workflow"
         },
         "id": {
@@ -10846,6 +11088,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvQmVuZWZpdHMudHN4": {
+      "title": "deco-sites/konohacoders/sections/Benefits.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvQmVuZWZpdHMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/konohacoders/sections/Benefits.tsx"
+          ],
+          "default": "deco-sites/konohacoders/sections/Benefits.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvQ2Fyb3VzZWwudHN4": {
       "title": "deco-sites/konohacoders/sections/Carousel.tsx",
       "type": "object",
@@ -11069,6 +11332,27 @@
             "deco-sites/konohacoders/sections/SearchResult.tsx"
           ],
           "default": "deco-sites/konohacoders/sections/SearchResult.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvU2luZ2xlQmFubmVyLnRzeA==": {
+      "title": "deco-sites/konohacoders/sections/SingleBanner.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9TaW5nbGVCYW5uZXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/konohacoders/sections/SingleBanner.tsx"
+          ],
+          "default": "deco-sites/konohacoders/sections/SingleBanner.tsx"
         }
       }
     },
@@ -12245,6 +12529,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvQmFubmVyUExQLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvQmVuZWZpdHMudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvQ2Fyb3VzZWwudHN4"
         },
         {
@@ -12276,6 +12563,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvU2VhcmNoUmVzdWx0LnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvU2luZ2xlQmFubmVyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvV2hhdHNBcHAudHN4"
