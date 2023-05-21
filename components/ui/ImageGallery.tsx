@@ -45,21 +45,29 @@ export default function ImageGallery({
           class="min-w-full object-cover max-w-[156px] max-h-[156px] lg:min-h-[316px] lg:min-w-[316px] lg:-w-fit"
           src={imageOne}
           alt={alt}
+          decoding="async"
+          loading="lazy"
         />
         <img
           class="min-w-full object-cover max-w-[156px] max-h-[156px] lg:min-h-[316px] lg:min-w-[316px] lg:-w-fit"
           src={imageTwo}
           alt={alt}
+          decoding="async"
+          loading="lazy"
         />
         <img
           class="min-w-full object-cover max-w-[156px] max-h-[156px] lg:min-h-[316px] lg:min-w-[316px] lg:-w-fit"
           src={imageThree}
           alt={alt}
+          decoding="async"
+          loading="lazy"
         />
         <img
           class="min-w-full object-cover max-w-[156px] max-h-[156px] lg:min-h-[316px] lg:min-w-[316px] lg:-w-fit"
           src={imageFour}
           alt={alt}
+          decoding="async"
+          loading="lazy"
         />
       </div>
     </section>
