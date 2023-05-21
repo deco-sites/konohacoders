@@ -31,12 +31,13 @@ import * as $$$$$$$$9 from "./sections/ProductShelf.tsx";
 import * as $$$$$$$$10 from "./sections/Footer.tsx";
 import * as $$$$$$$$11 from "./sections/CookieConsent.tsx";
 import * as $$$$$$$$12 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$13 from "./sections/Header.tsx";
-import * as $$$$$$$$14 from "./sections/ProductDetails.tsx";
-import * as $$$$$$$$15 from "./sections/Highlights.tsx";
-import * as $$$$$$$$16 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$17 from "./sections/Benefits.tsx";
-import * as $$$$$$$$18 from "./sections/Carousel.tsx";
+import * as $$$$$$$$13 from "./sections/ImageGallery.tsx";
+import * as $$$$$$$$14 from "./sections/Header.tsx";
+import * as $$$$$$$$15 from "./sections/ProductDetails.tsx";
+import * as $$$$$$$$16 from "./sections/Highlights.tsx";
+import * as $$$$$$$$17 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$18 from "./sections/Benefits.tsx";
+import * as $$$$$$$$19 from "./sections/Carousel.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -179,22 +180,23 @@ const manifest = {
     "$live/sections/UseSlot.tsx": i2$$$$2,
     "deco-sites/konohacoders/sections/BannerGrid.tsx": $$$$$$$$7,
     "deco-sites/konohacoders/sections/BannerPLP.tsx": $$$$$$$$5,
-    "deco-sites/konohacoders/sections/Benefits.tsx": $$$$$$$$17,
-    "deco-sites/konohacoders/sections/Carousel.tsx": $$$$$$$$18,
+    "deco-sites/konohacoders/sections/Benefits.tsx": $$$$$$$$18,
+    "deco-sites/konohacoders/sections/Carousel.tsx": $$$$$$$$19,
     "deco-sites/konohacoders/sections/CookieConsent.tsx": $$$$$$$$11,
     "deco-sites/konohacoders/sections/DesignSystem.tsx": $$$$$$$$12,
     "deco-sites/konohacoders/sections/Features.tsx": $$$$$$$$4,
     "deco-sites/konohacoders/sections/Footer.tsx": $$$$$$$$10,
-    "deco-sites/konohacoders/sections/Header.tsx": $$$$$$$$13,
-    "deco-sites/konohacoders/sections/Highlights.tsx": $$$$$$$$15,
+    "deco-sites/konohacoders/sections/Header.tsx": $$$$$$$$14,
+    "deco-sites/konohacoders/sections/Highlights.tsx": $$$$$$$$16,
+    "deco-sites/konohacoders/sections/ImageGallery.tsx": $$$$$$$$13,
     "deco-sites/konohacoders/sections/InteractiveBanners.tsx": $$$$$$$$6,
     "deco-sites/konohacoders/sections/LinkTree.tsx": $$$$$$$$1,
     "deco-sites/konohacoders/sections/NewProductShelf.tsx": $$$$$$$$3,
-    "deco-sites/konohacoders/sections/ProductDetails.tsx": $$$$$$$$14,
+    "deco-sites/konohacoders/sections/ProductDetails.tsx": $$$$$$$$15,
     "deco-sites/konohacoders/sections/ProductShelf.tsx": $$$$$$$$9,
     "deco-sites/konohacoders/sections/SearchResult.tsx": $$$$$$$$8,
     "deco-sites/konohacoders/sections/SingleBanner.tsx": $$$$$$$$2,
-    "deco-sites/konohacoders/sections/WhatsApp.tsx": $$$$$$$$16,
+    "deco-sites/konohacoders/sections/WhatsApp.tsx": $$$$$$$$17,
     "deco-sites/konohacoders/sections/WishlistGallery.tsx": $$$$$$$$0,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,

@@ -91,6 +91,7 @@
               "deco-sites/konohacoders/sections/Footer.tsx",
               "deco-sites/konohacoders/sections/Header.tsx",
               "deco-sites/konohacoders/sections/Highlights.tsx",
+              "deco-sites/konohacoders/sections/ImageGallery.tsx",
               "deco-sites/konohacoders/sections/InteractiveBanners.tsx",
               "deco-sites/konohacoders/sections/LinkTree.tsx",
               "deco-sites/konohacoders/sections/NewProductShelf.tsx",
@@ -8431,6 +8432,56 @@
       ],
       "title": "deco-sites/konohacoders/components/ui/Highlights.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9JbWFnZUdhbGxlcnkudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description",
+          "title": "Description"
+        },
+        "imageOne": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Image one",
+          "title": "Image One"
+        },
+        "imageTwo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Image two",
+          "title": "Image Two"
+        },
+        "imageThree": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Image Three",
+          "title": "Image Three"
+        },
+        "imageFour": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Image Four",
+          "title": "Image Four"
+        },
+        "alt": {
+          "type": "string",
+          "description": "Image's alt text",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "imageOne",
+        "imageTwo",
+        "imageThree",
+        "imageFour",
+        "alt"
+      ],
+      "title": "deco-sites/konohacoders/components/ui/ImageGallery.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@Position": {
       "type": "object",
       "properties": {
@@ -11442,6 +11493,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW1hZ2VHYWxsZXJ5LnRzeA==": {
+      "title": "deco-sites/konohacoders/sections/ImageGallery.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9JbWFnZUdhbGxlcnkudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/konohacoders/sections/ImageGallery.tsx"
+          ],
+          "default": "deco-sites/konohacoders/sections/ImageGallery.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==": {
       "title": "deco-sites/konohacoders/sections/InteractiveBanners.tsx",
       "type": "object",
@@ -12787,6 +12859,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSGlnaGxpZ2h0cy50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW1hZ2VHYWxsZXJ5LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA=="

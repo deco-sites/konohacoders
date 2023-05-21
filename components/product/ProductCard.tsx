@@ -55,7 +55,7 @@ function ProductCard({ product, preload, itemListName }: Props) {
 
   return (
     <div
-      class="card card-compact card-bordered border-transparent hover:border-base-200 group w-full"
+      class="card card-compact card-bordered border-transparent hover:border-secondary group w-full"
       data-deco="view-product"
       id={`product-card-${productID}`}
       {...sendEventOnClick(clickEvent)}
@@ -93,7 +93,7 @@ function ProductCard({ product, preload, itemListName }: Props) {
             decoding="async"
           />
         </a>
-        <figcaption class="glass card-body card-actions absolute bottom-0 left-0 w-full transition-opacity opacity-0 group-hover:opacity-100">
+        <figcaption class="card-body card-actions absolute bottom-0 left-0 w-full transition-opacity opacity-0 group-hover:opacity-100">
           {/* SKU Selector */}
           <ul class="flex justify-center items-center gap-2 w-full">
             {variants.map(([value, [link]]) => (

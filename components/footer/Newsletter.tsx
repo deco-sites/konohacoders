@@ -25,7 +25,7 @@ function Newsletter() {
   };
 
   return (
-    <div class="flex flex-col items-center gap-6 bg-white pb-8">
+    <div class=" px-4 flex flex-col items-center gap-6 bg-white pb-8">
       <div class="flex flex-col gap-2 max-w-[900px]">
         <span class="text-secondary font-bold text-1xl">
           Subscribe to our newsletter to get the updates to our last collection
