@@ -130,7 +130,7 @@ export default function InteractiveBanner({
           return (
             <>
               <div
-                class="absolute cursor-pointer group/item w-5 h-5 bg-white rounded-full hover:w-auto hover:h-auto lg:hidden"
+                class="absolute cursor-pointer group/item w-5 h-5 bg-accent border-4 border-white rounded-full hover:w-auto hover:h-auto lg:hidden "
                 style={{
                   bottom: `${pin?.positionMobile?.y}%`,
                   left: `${pin?.positionMobile?.x}%`,
@@ -138,13 +138,13 @@ export default function InteractiveBanner({
               >
                 <a
                   href={product.url}
-                  class="group/edit invisible group-hover/item:visible flex whitespace-nowrap text-base-100 text-caption rounded-3xl text-center w-full justify-center items-center min-h-[36px] hover:bg-base-100 hover:text-base-content border border-base-100 p-2"
+                  class="group/edit invisible group-hover/item:visible flex whitespace-nowrap text-base-100 text-caption rounded-3xl text-center w-full justify-center items-center min-h-[36px] hover:bg-secondary border border-base-100 p-2"
                 >
                   <span>{product?.name}</span>
                 </a>
               </div>
               <div
-                class="absolute cursor-pointer group/item w-5 h-5 bg-white rounded-full hover:w-auto hover:h-auto hidden lg:flex"
+                class="absolute cursor-pointer group/item w-5 h-5 bg-accent border-4 border-white rounded-full hover:w-auto hover:h-auto hidden lg:flex"
                 style={{
                   bottom: `${pin?.positionDesktop?.y}%`,
                   left: `${pin?.positionDesktop?.x}%`,
@@ -152,7 +152,7 @@ export default function InteractiveBanner({
               >
                 <a
                   href={product.url}
-                  class="group/edit invisible group-hover/item:visible flex whitespace-nowrap text-base-100 text-caption rounded-3xl text-center w-full justify-center items-center min-h-[36px] hover:bg-base-100 hover:text-base-content border border-base-100 p-2 "
+                  class="group/edit invisible group-hover/item:visible flex whitespace-nowrap text-base-100 text-caption rounded-3xl text-center w-full justify-center items-center min-h-[36px] hover:bg-secondary border border-base-100 p-2 "
                 >
                   {product?.name}
                 </a>
