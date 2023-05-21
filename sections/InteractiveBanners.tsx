@@ -104,9 +104,21 @@ export default function InteractiveBanner({
           </div>
         )}
       <Picture class="flex relative max-h-[500px] w-100 lg:w-3/5 rounded">
+        <Source
+          media="(max-width: 767px)"
+          src={srcMobile}
+          width={150}
+          height={150}
+        />
+        <Source
+          media="(min-width: 768px)"
+          src={srcDesktop ? srcDesktop : srcMobile}
+          width={250}
+          height={250}
+        />
         <img
-          class="w-full rounded object-cover"
-          sizes="(max-width: 640px) 100vw, 50vw"
+          class="w-full rounded bg-cover"
+          sizes="(max-width: 640px) 100vw, 30vw"
           src={srcMobile}
           alt={alt}
           decoding="async"
