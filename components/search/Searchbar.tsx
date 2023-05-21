@@ -107,7 +107,7 @@ function Searchbar({
             tabIndex={-1}
           >
             <Icon
-              class="text-base-300"
+              class="text-gray"
               id="MagnifyingGlass"
               size={20}
               strokeWidth={0.01}
@@ -165,7 +165,7 @@ function Searchbar({
               >
                 Nenhum resultado encontrado
               </span>
-              <span class="text-center text-base-300">
+              <span class="text-center text-gray">
                 Vamos tentar de outro jeito? Verifique a ortografia ou use um
                 termo diferente
               </span>

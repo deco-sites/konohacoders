@@ -62,13 +62,13 @@ function SingleBanner({
             height={600}
           />
         )}
-        <img class="object-cover w-full h-full" />
+        <img class="object-cover w-full h-full" alt={title} />
       </Picture>
 
       <div className="max-w-[144px] md:max-w-[420px] flex flex-col relative z-10">
         <span className="text-xs mb-1 md:mb-4 md:text-base">{tag}</span>
         <h2 className="text-xl mb-3 md:mb-6 md:text-5xl">{title}</h2>
-        <h4 className="text-sm mb-4 md:mb-6 md:text-lg">{description}</h4>
+        <h3 className="text-sm mb-4 md:mb-6 md:text-lg">{description}</h3>
       </div>
     </div>
   );

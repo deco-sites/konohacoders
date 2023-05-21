@@ -87,7 +87,7 @@ function Cart() {
                 {formatPrice(total.value / 100, currencyCode!, locale)}
               </span>
             </div>
-            <span class="text-sm text-base-300">
+            <span class="text-sm text-gray">
               Taxas e fretes serão calculados no checkout
             </span>
           </div>
