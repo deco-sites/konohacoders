@@ -76,7 +76,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
         <div>
-          <span class="text-sm text-base-300">
+          <span class="text-sm text-gray">
             Cod. {gtin}
           </span>
         </div>
@@ -87,14 +87,14 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       {/* Prices */}
       <div class="mt-4">
         <div class="flex flex-row gap-2 items-center">
-          <span class="line-through text-base-300 text-xs">
+          <span class="line-through text-gray text-xs">
             {formatPrice(listPrice, offers!.priceCurrency!)}
           </span>
           <span class="font-medium text-xl text-secondary">
             {formatPrice(price, offers!.priceCurrency!)}
           </span>
         </div>
-        <span class="text-sm text-base-300">
+        <span class="text-sm text-gray">
           {installments}
         </span>
       </div>

@@ -47,7 +47,7 @@ function CartItem({ index }: Props) {
       <div class="flex-grow">
         <span>{name}</span>
         <div class="flex items-center gap-2">
-          <span class="line-through text-base-300 text-sm">
+          <span class="line-through text-gray text-sm">
             {formatPrice(listPrice / 100, currencyCode!, locale)}
           </span>
           <span class="text-sm text-secondary">
