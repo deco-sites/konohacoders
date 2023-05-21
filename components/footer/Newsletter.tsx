@@ -25,14 +25,13 @@ function Newsletter() {
   };
 
   return (
-    <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-20">
-      <div class="flex flex-col gap-2 max-w-[400px]">
-        <span class="font-medium text-2xl text-primary-content">
-          Cadastre-se
+    <div class="flex flex-col items-center gap-6 bg-white pb-8">
+      <div class="flex flex-col gap-2 max-w-[900px]">
+        <span class="text-secondary font-bold text-1xl">
+          Subscribe to our newsletter to get the updates to our last collection
         </span>
-        <span class="text-sm text-primary-content">
-          Fique por dentro das novidades e ganhe 15% de desconto na primeira
-          compra. Para mais informações clique aqui.
+        <span class="text-sm text-secondary">
+          Get 20% off on your first order just by subscribing for our newsletter
         </span>
       </div>
       <form
@@ -42,11 +41,11 @@ function Newsletter() {
         <div class="input-group">
           <input
             name="email"
-            class="flex-grow input input-primary"
-            placeholder="Seu e-mail"
+            class="flex-grow input input-primary border-secondary"
+            placeholder="Enter your email"
           />
-          <button class="btn disabled:loading" disabled={loading}>
-            Cadastrar
+          <button class="btn-secondary disabled:loading p-2" disabled={loading}>
+            Subscribe
           </button>
         </div>
       </form>

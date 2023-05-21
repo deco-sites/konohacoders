@@ -21,7 +21,7 @@ const isIcon = (item: Item): item is IconItem =>
 
 function SectionItem({ item }: { item: Item }) {
   return (
-    <span class="text-primary-content">
+    <span class="text-white">
       {isIcon(item)
         ? (
           <div class="border-base-100 border border-solid py-1.5 px-2.5">
@@ -57,20 +57,17 @@ export interface Props {
 
 function Footer({ sections = [] }: Props) {
   return (
-    <footer class="w-full bg-primary flex flex-col divide-y divide-primary-content">
+    <footer class="w-full bg-secondary flex flex-col divide-y divide-primary-content border-white">
       <div>
+        <Newsletter />
         <div class="container w-full flex flex-col divide-y divide-primary-content">
-          <FooterContainer>
-            <Newsletter />
-          </FooterContainer>
-
           <FooterContainer>
             {/* Desktop view */}
             <ul class="hidden sm:flex flex-row gap-20">
               {sections.map((section) => (
                 <li>
                   <div>
-                    <span class="font-medium text-xl text-primary-content">
+                    <span class="text-white font-medium text-xl">
                       {section.label}
                     </span>
 
@@ -120,10 +117,10 @@ function Footer({ sections = [] }: Props) {
         </div>
       </div>
 
-      <div>
-        <div class="container w-full">
+      <div class="border-white">
+        <div class="container w-full ">
           <FooterContainer class="flex justify-between w-full">
-            <span class="flex items-center gap-1 text-primary-content">
+            <span class="flex items-center gap-1 text-white">
               Powered by{" "}
               <a
                 href="https://www.deco.cx"
@@ -142,7 +139,7 @@ function Footer({ sections = [] }: Props) {
                   aria-label="Instagram logo"
                 >
                   <Icon
-                    class="text-primary-content"
+                    class="text-white"
                     width={32}
                     height={32}
                     id="Instagram"
@@ -158,7 +155,7 @@ function Footer({ sections = [] }: Props) {
                   aria-label="Discord logo"
                 >
                   <Icon
-                    class="text-primary-content"
+                    class="text-white"
                     width={32}
                     height={32}
                     id="Discord"

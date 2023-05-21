@@ -117,7 +117,7 @@ export default function InteractiveBanner({
           height={250}
         />
         <img
-          class="w-full rounded"
+          class="w-full rounded bg-cover"
           sizes="(max-width: 640px) 100vw, 30vw"
           src={srcMobile}
           alt={alt}
