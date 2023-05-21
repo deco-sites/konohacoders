@@ -105,7 +105,7 @@ export default function InteractiveBanner({
         )}
       <Picture class="flex relative max-h-[500px] w-100 lg:w-3/5 rounded">
         <img
-          class="w-full rounded"
+          class="w-full rounded object-cover"
           sizes="(max-width: 640px) 100vw, 50vw"
           src={srcMobile}
           alt={alt}
