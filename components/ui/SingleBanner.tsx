@@ -38,7 +38,8 @@ export interface Props {
 function SingleBanner({
   tag = "Tagline",
   title = "Short heading here",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ",
+  description =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ",
   mobile,
   desktop,
 }: Props) {

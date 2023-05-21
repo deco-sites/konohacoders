@@ -24,18 +24,19 @@ function FeatureHighlights(
 ) {
   return (
     <div class="container min-h-[280px] p-6 sm:px-0 sm:py-10">
-      <div class="border-base-200 border border-solid">
-        <div class="flex flex-col justify-evenly divide-y divide-base-200 mx-6 sm:flex-row sm:divide-y-0 sm:divide-x sm:mx-0 sm:my-10">
+      <div>
+        <div class="flex flex-col justify-evenly divide-y divide-base-200 mx-6 sm:flex-row sm:divide-y-0 sm:divide-x sm:mx-0 sm:my-10 border-hidden">
           {features.map(({ icon: id = "Truck", title, description }) => (
-            <div class="flex flex-row gap-4 py-6 sm:flex-col sm:py-0 sm:px-8">
+            <div class="flex flex-row gap-4 py-6 sm:flex-col sm:py-0 sm:px-8 border-hidden">
               <Icon
+                class="rounded bg-primary p-2"
                 id={id}
                 width={40}
                 height={40}
                 strokeWidth={2}
               />
               <div class="flex flex-col gap-2">
-                <span class="font-medium text-xl">{title}</span>
+                <span class="font-medium text-xl b">{title}</span>
                 <span class="text-sm">{description}</span>
               </div>
             </div>
