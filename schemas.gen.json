@@ -90,6 +90,7 @@
               "deco-sites/konohacoders/sections/Footer.tsx",
               "deco-sites/konohacoders/sections/Header.tsx",
               "deco-sites/konohacoders/sections/Highlights.tsx",
+              "deco-sites/konohacoders/sections/InteractiveBanners.tsx",
               "deco-sites/konohacoders/sections/LinkTree.tsx",
               "deco-sites/konohacoders/sections/ProductDetails.tsx",
               "deco-sites/konohacoders/sections/ProductShelf.tsx",
@@ -8428,6 +8429,110 @@
       ],
       "title": "deco-sites/konohacoders/components/ui/Highlights.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@Position": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number",
+          "description": "Horizontal position of the pin",
+          "title": "X"
+        },
+        "y": {
+          "type": "number",
+          "description": "Vertical position of the pin",
+          "title": "Y"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "Position"
+    },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@Pins": {
+      "type": "object",
+      "properties": {
+        "positionDesktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@Position",
+          "title": "Position Desktop"
+        },
+        "positionMobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@Position",
+          "title": "Position Mobile"
+        },
+        "productId": {
+          "type": "string",
+          "description": "Product of the pin",
+          "title": "Product Id"
+        }
+      },
+      "required": [
+        "positionDesktop",
+        "positionMobile",
+        "productId"
+      ],
+      "title": "Pins"
+    },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@Pins[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@Pins"
+      },
+      "title": "Pins[]"
+    },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@InteractiveBannerI": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Title of the banner.",
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle"
+        },
+        "cta": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta"
+        },
+        "pins": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@Pins[]",
+          "description": "List of pins.",
+          "title": "Pins"
+        },
+        "srcMobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Image at mobile.",
+          "title": "Src Mobile"
+        },
+        "srcDesktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Image at desktop.",
+          "title": "Src Desktop"
+        },
+        "alt": {
+          "type": "string",
+          "description": "Image alt text.",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "pins",
+        "srcMobile",
+        "alt"
+      ],
+      "title": "deco-sites/konohacoders/sections/InteractiveBanners.tsx@InteractiveBannerI"
+    },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvY29tcG9uZW50cy91aS9MaW5rVHJlZS50c3g=@Link": {
       "type": "object",
       "properties": {
@@ -11251,6 +11356,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==": {
+      "title": "deco-sites/konohacoders/sections/InteractiveBanners.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA==@InteractiveBannerI"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/konohacoders/sections/InteractiveBanners.tsx"
+          ],
+          "default": "deco-sites/konohacoders/sections/InteractiveBanners.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvTGlua1RyZWUudHN4": {
       "title": "deco-sites/konohacoders/sections/LinkTree.tsx",
       "type": "object",
@@ -12551,6 +12677,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSGlnaGxpZ2h0cy50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXJzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rb25vaGFjb2RlcnMvc2VjdGlvbnMvTGlua1RyZWUudHN4"
