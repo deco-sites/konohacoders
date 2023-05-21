@@ -107,8 +107,8 @@ export default function InteractiveBanner({
         <Source
           media="(max-width: 767px)"
           src={srcMobile}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
         <Source
           media="(min-width: 768px)"
