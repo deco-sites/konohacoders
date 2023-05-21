@@ -25,9 +25,9 @@ function FeatureHighlights(
   return (
     <div class="container min-h-[280px] p-6 sm:px-0 sm:py-10">
       <div>
-        <div class="flex flex-col justify-evenly divide-y divide-base-200 mx-6 sm:flex-row sm:divide-y-0 sm:divide-x sm:mx-0 sm:my-10 border-hidden">
+        <div class="flex flex-col justify-evenly divide-y divide-base-200 sm:flex-row sm:divide-y-0 sm:divide-x sm:mx-0 sm:my-10 border-hidden w-full m-0">
           {features.map(({ icon: id = "Truck", title, description }) => (
-            <div class="flex flex-row gap-4 py-6 sm:flex-col sm:py-0 sm:px-8 border-hidden">
+            <div class="flex flex-row gap-4 py-6 sm:flex-col sm:py-0 sm:px-8 border-hidden flex-1">
               <Icon
                 class="rounded bg-primary p-2"
                 id={id}

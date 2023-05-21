@@ -17,7 +17,7 @@ export interface Props {
 function Highlights({ highlights = [], title }: Props) {
   return (
     <div class="container grid grid-cols-1 grid-rows-[48px_1fr] py-10">
-      <h2 class="text-left">
+      <h2 class="text-left px-4">
         <span class="font-medium text-2xl">{title}</span>
       </h2>
 
